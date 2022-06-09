@@ -1,1 +1,35 @@
 // Я отзывы клиентов
+.user__photo {
+    margin-top: 80px;
+    margin-bottom: 32px;
+    width: 85px;
+}
+
+.review {
+    padding: 43px 58px 26px 58px;
+    text-align: center;
+    background-color: #fafafa;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.58;
+
+    @media screen and (min-width: 480px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.58;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+    }
+}
