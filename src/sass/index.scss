@@ -2,6 +2,16 @@
 
 @import './base/reset';
 
+@import './base/container';
+
+@import './base/vars';
+
+@import './utils/mixins';
+
+@import './utils/visually-hidden';
+
+@import './utils/no-scroll';
+
 @import './components/header.scss';
 
 @import './components/hero.scss';
@@ -20,4 +30,8 @@
 
 @import './components/footer.scss';
 
-@import './utils/visually-hidden';
+@import './components/buttons';
+
+
+
+

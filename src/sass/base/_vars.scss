@@ -1,26 +1,14 @@
-:root {
-    // -------Text colors-------
+$primaryColor: #FFFFFF;
+$accentColor: #D41443;
+$additionalDarkColor: #000000;
+$additionalLightColor: #907E82;
 
-    --main-text-color: #FFFFFF;
-    --secondary-text-color: #000000;
+$iconColor: #FEA5BB;
 
-    --main-header-color: #D41443;
-    --secondary-header-color: #FFA5BA;
-    --third-text-color: #907E82;
 
-    // -------BG colors-------
+$modalBackground: #E17992;
 
-    --main-bg-: #FFB8CA;
-    --secondary-bg: #FFF5F6;
-    --modal-bg: #E17992;
+$typicallMargin: 16px;
 
-    // -------Additional colors-------
-
-    --additional-first: #F0D1A5;
-    --additional-second: #C2E297;
-
-    // -------Icons colors-------
-
-    --icon-main: #FEA5BB;
-
-}
+$hooverDuration: 250ms;
+$hoverTimeFunction: cubic-bezier(0.4, 0, 0.2, 1);
