@@ -2,9 +2,13 @@
 
 @import './base/reset';
 
-@import './base/container';
-
 @import './base/vars';
+
+@import './components/container';
+
+@import './components/buttons';
+
+@import './components/section';
 
 @import './utils/mixins';
 
@@ -12,25 +16,25 @@
 
 @import './utils/no-scroll';
 
-@import './components/header.scss';
+@import './layouts/header.scss';
 
-@import './components/hero.scss';
+@import './layouts/hero.scss';
 
-@import './components/products.scss';
+@import './layouts/products.scss';
 
-@import './components/about.scss';
+@import './layouts/about.scss';
 
-@import './components/advantages.scss';
+@import './layouts/advantages.scss';
 
-@import './components/gallery.scss';
+@import './layouts/gallery.scss';
 
-@import './components/customer-review.scss';
+@import './layouts/customer-review.scss';
 
-@import './components/contacts.scss';
+@import './layouts/contacts.scss';
 
-@import './components/footer.scss';
+@import './layouts/footer.scss';
 
-@import './components/buttons';
+
 
 
 
