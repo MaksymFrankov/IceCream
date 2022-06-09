@@ -12,6 +12,7 @@ ul,
 ol {
     margin: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 img {
@@ -19,4 +20,10 @@ img {
     min-width: 100%;
     height: auto;
     width: 100%;
+}
+
+a {
+    all: unset;
+    text-decoration: none;
+    cursor: pointer;
 }
