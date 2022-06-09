@@ -1,27 +1,23 @@
 :root {
     // -------Text colors-------
-    --main-white: #FFFFFF;
-    --main-red: #D41443;
-    --main-lightpurple: #FFA5BA;
-    --main-black: #000000;
-    --main-greypurpule: #907E82;
+
+    --main-text-color: #FFFFFF;
+    --secondary-text-color: #000000;
+
+    --main-header-color: #D41443;
+    --secondary-header-color: #FFA5BA;
+    --third-text-color: #907E82;
+
     // -------BG colors-------
 
-
-    --header-hero-lightpurple: #FFB8CA;
-    --header-hero-purple: #FFA5BA;
-
-
-    --products-lightgreen: #C2E297;
-    --products-cream: #F0D1A5;
-    --products-lightpurple: #FFB8CA;
-
-    --about-adventures-bg: #FFF5F6;
-
-    --contacts-cream: #F0D1A5;
-    --contacts-lightgreen: #C2E297;
-
+    --main-bg-: #FFB8CA;
+    --secondary-bg: #FFF5F6;
     --modal-bg: #E17992;
+
+    // -------Additional colors-------
+
+    --additional-first: #F0D1A5;
+    --additional-second: #C2E297;
 
     // -------Icons colors-------
 
