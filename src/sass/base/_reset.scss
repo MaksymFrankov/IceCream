@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
 p,
 h1,
 h2,
@@ -15,15 +26,11 @@ ol {
     list-style: none;
 }
 
-img {
-    display: block;
-    min-width: 100%;
-    height: auto;
-    width: 100%;
-}
-
 a {
     all: unset;
     text-decoration: none;
-    cursor: pointer;
+}
+
+textarea {
+    resize: none;
 }
