@@ -1,1 +1,36 @@
 // Я кнопки
+
+.button {
+  border: 1px solid green;
+
+  height: 44px;
+  width: 159px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  background-color: #ffffff;
+
+  &__header {
+    fill: #d41443;
+    color: #d41443;
+  }
+
+  &__about {
+    fill: #d41443;
+    color: #d41443;
+  }
+
+  &__customer--dark {
+    background-color: #d41342;
+    color: #ffffff;
+  }
+
+  &__customer--light {
+    color: #d41443;
+    fill: #ffffff;
+  }
+}
