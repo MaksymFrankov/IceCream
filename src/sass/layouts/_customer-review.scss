@@ -1,12 +1,8 @@
 // Я отзывы клиентов
-.review {
-  margin-top: 80px;
-  margin-bottom: 48px;
-}
 
+.review {
+}
 .review__tab {
-  padding: 43px 58px 26px 58px;
-  background-color: #fafafa;
 }
 
 .review__img {
@@ -17,15 +13,83 @@
 }
 
 .review__text {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
+  padding: 43px 58px 26px 58px;
+  background-color: #fafafa;
   &::before {
+    position: absolute;
+    top: 19px;
+    left: 30px;
     content: '';
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/customer-review/quotes.svg);
   }
 }
 
-.review__quotes {
-  width: 54px;
+.review__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  padding-top: 36px;
+  color: $additionalDarkColor;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 16%;
+    // padding-bottom: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/customer-review/bullet-dot.png);
+  }
+}
+
+.swiper {
+  margin-top: 80px;
+  margin-bottom: 48px;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 104px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(../images/customer-review/home.svg);
+  background-size: cover;
+  border-radius: unset;
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
 }
