@@ -1,1 +1,73 @@
-// Я хэдер
+.header {
+    background-color: #FFBBCA;
+    > .container {
+        display: flex;
+        align-items: center;
+        padding-top: 8px;
+    }
+    .logo__text {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.46;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $accentColor;
+    }
+    .navigation {
+        
+    }
+    .navigation__list {
+        display: none;
+    }
+    .navigation__item {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        display: flex;
+        align-items: center;
+        color: $primaryColor;
+    }
+    .button-header__top {
+        width: 159px;
+        height: 44px;
+        left: 1105px;
+        top: 40px;
+        background: #FFFFFF;
+        border-radius: 22px;
+        border-color: transparent;
+        color: $accentColor;
+        display: none;
+        transition: background-color $hooverDuration $hoverTimeFunction;
+        fill: $accentColor;
+        &:hover {
+            background-color: #ECEBEB;
+        }
+
+        @media screen and (min-width:768px){
+            display: block;
+            margin: 32px 0 32px 32px;
+            
+        }
+    }
+
+    .navigation .link {
+        
+    }
+
+    .menu-open-btn, .menu-close-btn {
+        background-color: transparent;
+        border: none;
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .menu-open-icon, .menu-close-btn {
+        transition: fill $hooverDuration $hoverTimeFunction;
+        fill: $accentColor;
+        &:hover {
+            fill: #ECEBEB;
+        }
+    }
+}
