@@ -1,204 +1,218 @@
-.container__contacts {
+.section__contacts {
+    padding: 8px 0px;
+
     background-image: linear-gradient(
         to bottom,
-        $primaryColor 23%,
-        #FFF5F6 23%
+        $primaryColor 24%,
+        #FFF5F6 24%
     );
 
     @include tablet {
+        padding: 0;
+
         background-image: linear-gradient(
             to bottom,
             $primaryColor 23%,
             #FFF5F6 23%
         );
     }
+
     @include desktop {
+        padding: 60px 0px;
+
         background-image: linear-gradient(
             to bottom,
-            $primaryColor 18%,
-            #FFF5F6 18%
+            $primaryColor 21%,
+            #FFF5F6 21%
         );
     }
 
-    .contacts {
+    .container__contacts {
+        @include tablet {
+            padding: 0 18px;
+        }
+    
+        @include desktop {
+            padding: 0 16px;
+        }
+    }
+    
+    .contacts__list {
         @include tablet {
             display: flex;
             margin: -16px;
         }
+    }
     
-        .contacts__list {
-            padding: 40px 32px;
+    .contacts__item {
+        padding: 40px 32px;
     
-            background-color: $primaryColor;
-            border: 1px solid #E1E1E1;
-            border-radius: 24px;
-            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background-color: $primaryColor;
+        border: 1px solid #E1E1E1;
+        border-radius: 24px;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
-            &:not(:last-child) {
-                @media screen and (max-width: 767px) {
-                  margin-bottom: 20px;
-                }
-            }
-
-            @include tablet {
-                width: calc((100% - 96px)/3);
-                margin: 16px;
-            }
-            @include desktop {
-                padding: 40px 40px;
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+              margin-bottom: 20px;
             }
         }
     
-        .contacts__item {
+        @include tablet {
+            width: calc((100% - 96px)/3);
+            margin: 16px;
+        }
+        @include desktop {
+            padding: 40px 40px;
+        }
+    }
+    
+    .contacts-description__item {
+        &:not(:first-child) {
+            padding-top: 24px;
+        }
+    
+        &:not(:last-child) {
+            padding-bottom: 24px;
+    
+            border-bottom: 1px solid #E1E1E1;
+        }
+    
+        @include tablet {
             &:not(:first-child) {
-                padding-top: 24px;
+                padding-top: 32px;
             }
-
+    
             &:not(:last-child) {
-                padding-bottom: 24px;
-    
-                border-bottom: 1px solid #E1E1E1;
-            }
-
-            @include tablet {
-                &:not(:first-child) {
-                    padding-top: 32px;
-                }
-
-                &:not(:last-child) {
-                    padding-bottom: 32px;
-                }
-            }
-        }
-    
-        .contacts__text {
-            @include font(500, 12px, 1.84, 0.04em);
-    
-            color: $additionalDarkColor;
-
-            @include mobile-horizontal {
-                @include font(500, 14px, 1.86, 0.04em);
-            }
-            @include desktop {
-                @include font(500, 16px, 1.88, 0.04em);
-            }
-
-            &--margin-bottom {
-                margin-bottom: 8px;
-
-                @include tablet {
-                    margin-bottom: 12px;
-                }
-                @include desktop {
-                    margin-bottom: 8px;
-                }
-            }
-    
-            &--orange,
-            &--green {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 20px;
-    
-                text-transform: uppercase;
-    
-                color: $primaryColor;
-                border-radius: 4px;
-
-                @include tablet {
-                    margin-bottom: 32px;
-
-                    @include font(500, 16px, 1.88, 0.04em);
-                }
-            }
-            
-            &--orange {
-                width: 80px;
-                height: 16px;
-    
-                background-color: #F0D1A5;
-
-                @include tablet {
-                    width: 73px;
-                    height: 28px;
-                }
-            }
-    
-            &--green {
-                width: 130px;
-                height: 16px;
-    
-                background-color: #C2E297;
-
-                @include tablet {
-                    width: 138px;
-                    height: 28px;
-                }
-            }
-        
-            &--grey {
-                color: $additionalLightColor;
+                padding-bottom: 32px;
             }
         }
     }
-
-    .working-time__list {
-        .working-time__item {
-            &:not(:last-child) {
-                margin-bottom: 8px;
-            }
-
-            @include tablet {
-                &:not(:last-child) {
-                    margin-bottom: 12px;
-                }
-            }
+    
+    .contacts-description__text {
+        @include font(500, 12px, 1.84, 0.04em);
+    
+        color: $additionalDarkColor;
+    
+        @include mobile-horizontal {
+            @include font(500, 14px, 1.86, 0.04em);
         }
-        
-        .working-time__text {
-            @include font(500, 12px, 1.84, 0.04em);
-        
-            color: #FFA5BA;
-
-            @include mobile-horizontal {
-                @include font(500, 14px, 1.86, 0.04em);
+    
+        @include desktop {
+            @include font(500, 16px, 1.88, 0.04em);
+        }
+    
+        &--margin-bottom {
+            margin-bottom: 8px;
+    
+            @include tablet {
+                margin-bottom: 12px;
             }
             @include desktop {
+                margin-bottom: 8px;
+            }
+        }
+    
+        &--orange,
+        &--green {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+    
+            text-transform: uppercase;
+    
+            color: $primaryColor;
+            border-radius: 4px;
+    
+            @include tablet {
+                margin-bottom: 32px;
+    
                 @include font(500, 16px, 1.88, 0.04em);
             }
         }
-    }
-
-    .contacts-communication__list {
-
-        .contacts-communication__link {
-            @include font(500, 12px, 1.84, 0.04em);
         
+        &--orange {
+            width: 80px;
+            height: 16px;
+    
+            background-color: #F0D1A5;
+    
+            @include tablet {
+                width: 73px;
+                height: 28px;
+            }
+        }
+    
+        &--green {
+            width: 130px;
+            height: 16px;
+    
+            background-color: #C2E297;
+    
+            @include tablet {
+                width: 138px;
+                height: 28px;
+            }
+        }
+    
+        &--grey {
             color: $additionalLightColor;
-            
-            transition: color $hooverDuration $hoverTimeFunction;
-
-            @include mobile-horizontal {
-                @include font(500, 14px, 1.86, 0.04em);
-            }
-            @include desktop {
-                @include font(500, 16px, 1.82, 0.04em);
-            }
-        
-            &:hover,
-            &:focus {
-              color: $accentColor;
+        }
+    }
+    
+    .working-time__item {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    
+        @include tablet {
+            &:not(:last-child) {
+                margin-bottom: 12px;
             }
         }
     }
-
+    
+    .working-time__text {
+        @include font(500, 12px, 1.84, 0.04em);
+    
+        color: #FFA5BA;
+    
+        @include mobile-horizontal {
+            @include font(500, 14px, 1.86, 0.04em);
+        }
+        @include desktop {
+            @include font(500, 16px, 1.88, 0.04em);
+        }
+    }
+    
+    .contacts-communication__link {
+        @include font(500, 12px, 1.84, 0.04em);
+    
+        color: $additionalLightColor;
+        
+        transition: color $hooverDuration $hoverTimeFunction;
+    
+        @include mobile-horizontal {
+            @include font(500, 14px, 1.86, 0.04em);
+        }
+        @include desktop {
+            @include font(500, 16px, 1.82, 0.04em);
+        }
+    
+        &:hover,
+        &:focus {
+          color: $accentColor;
+        }
+    }
+    
     .contacts__box {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-top: 32px;
-
+    
         @include tablet {
             display: flex;
             flex-direction: row;
@@ -209,24 +223,44 @@
         @include desktop {
             margin-top: 60px;
         }
+    }
     
-        .contacts__button {
-            display: flex;
-            justify-content: center;
+    .contacts__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 161px;
+        height: 44px;
+    
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    
+        @include tablet {
+            width: 191px;
+            height: 44px;
+    
+            &--inverse {
+                width: 174px;
+                height: 44px;
+            }
+    
             &:not(:last-child) {
-                margin-bottom: 10px;
+                margin-right: 14.5px;
+                margin-bottom: 0;
             }
-
-            @include tablet {
-                &:not(:last-child) {
-                    margin-right: 14.5px;
-                    margin-bottom: 0;
-                }
+        }
+        @include desktop {
+            width: 198px;
+            height: 44px;
+    
+            &--inverse {
+                width: 180px;
+                height: 44px;
             }
-            @include desktop {
-                &:not(:last-child) {
-                    margin-right: 15px;
-                }
+    
+            &:not(:last-child) {
+                margin-right: 15px;
             }
         }
     }
