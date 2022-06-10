@@ -1,1 +1,114 @@
-// Я контакты
+.contacts {
+    margin-bottom: 32px;
+
+    .contacts__list {
+        padding: 40px 32px;
+
+        background-color: $primaryColor;
+        border: 1px solid #E1E1E1;
+        border-radius: 24px;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+              margin-bottom: 20px;
+            }
+        }
+    }
+
+    .contacts__item {
+
+        &:not(:first-child) {
+            padding-top: 24px;
+        }
+        &:not(:last-child) {
+            padding-bottom: 24px;
+
+            border-bottom: 1px solid #E1E1E1;
+        }
+    }
+
+    .contacts__text {
+        @include font(500, 12px, 1.84, 0.04em);
+
+        color: $additionalDarkColor;
+
+        &--margin-bottom {
+            margin-bottom: 8px;
+        }
+
+        &--orange,
+        &--green {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            text-transform: uppercase;
+
+            color: $primaryColor;
+            border-radius: 4px;
+        }
+        
+        &--orange {
+            width: 80px;
+            height: 16px;
+
+            background-color: #F0D1A5;
+        }
+
+        &--green {
+            width: 130px;
+            height: 16px;
+
+            background-color: #C2E297;
+        }
+    
+        &--grey {
+            color: $additionalLightColor;
+        }
+    }
+}
+
+
+.working-time__list {
+}
+
+.working-time__item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.working-time__text {
+    @include font(500, 12px, 1.84, 0.04em);
+
+    color: #FFA5BA;
+}
+
+
+.contacts-communication__list {
+}
+
+.contacts-communication__item {
+}
+
+.contacts-communication__link {
+    @include font(500, 12px, 1.84, 0.04em);
+
+    color: $additionalLightColor;
+    
+    transition: color $hooverDuration $hoverTimeFunction;
+
+    &:hover,
+    &:focus {
+      color: $primaryColor;
+    }
+}
+
+
+.contacts-box {
+    display: flex;
+    flex-direction: column;
+}
