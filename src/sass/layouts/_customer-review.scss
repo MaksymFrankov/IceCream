@@ -1,1 +1,26 @@
 // Я отзывы клиентов
+.review {
+  margin-top: 80px;
+  margin-bottom: 48px;
+}
+
+.review__tab {
+  padding: 43px 58px 26px 58px;
+  background-color: #fafafa;
+}
+
+.review__img {
+  width: 85px;
+  margin-bottom: 32px;
+}
+
+.review__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+}
+
+.review__quotes {
+  width: 54px;
+}
