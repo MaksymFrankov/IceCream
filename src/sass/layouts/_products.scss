@@ -1,1 +1,103 @@
-// Я продукты
+.product {
+    background-color: $primaryColor;
+}
+
+.section-title-label {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFA5BA;
+    margin-bottom: 15px;
+}
+
+.product__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    margin-bottom: 8px;
+}
+
+.product__card {
+   background: #FFB8CA;
+   border-radius: 24px;
+   padding: 160px 40px 40px 40px;
+  
+}
+.product__card--yellow-bcg{
+    background: #F0D1A5;
+}
+.product__card--green-bcg{
+    background: #C2E297;
+}
+
+.product__name{
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+           
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: $primaryColor;
+        margin-bottom: 70px;
+}
+
+.product__description{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.52;
+     
+        text-align: center;
+        letter-spacing: 0.04em;
+    
+        color: $primaryColor;
+        margin-bottom: 32px;
+}
+
+.button--round{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+    background-color: $primaryColor;
+    fill: $accentColor;
+    justify-content: center;
+    align-items: center;
+    
+  
+        &:hover,
+        &:focus {
+            background-color: $accentColor;
+            fill: $primaryColor;
+        }
+
+    transition: background-color $hooverDuration $hoverTimeFunction, 
+    fill $hooverDuration $hoverTimeFunction;
+
+}
+    // background-image: 
+    //         url(../images/hero.jpg);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: contain;
+    //     margin-left: auto;
+    //     margin-right: auto;
+
