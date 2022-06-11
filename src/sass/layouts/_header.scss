@@ -1,9 +1,17 @@
-    .header {
-  background-color: #ffbbca;
+.header {
+  position: absolute;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 999;
+  width: 100%;
+
   > .container {
     display: flex;
     align-items: center;
     padding-top: 8px;
+    @media screen and (min-width: 1280px) {
+      padding-top: 37px;
+    }
   }
   .logo__img {
     border-radius: 50%;
@@ -30,7 +38,7 @@
       font-size: 16px;
       line-height: 1.31;
       align-items: center;
-      margin-left: 175px;
+      padding-left: 175px;
     }
   }
   .navigation__item {
