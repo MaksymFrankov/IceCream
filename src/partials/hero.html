@@ -19,7 +19,17 @@
     </div>
     <div class="hero__row">
       <div class="hero__milk">
-        <div class="hero__img1"><img src="/src/images/hero/hero1.png" alt="milk" width="213"></div>
+        <div class="hero__img1">
+          <source
+          media="(min-width: 768px)"
+          srcset="/src/images/hero/hero1-tab.png 1x, /src/images/hero/hero1-tab-2x.png 2x"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/src/images/hero/hero1.png 1x, /src/images/hero/hero1-2x.png 2x"
+        /> 
+          <img src="/src/images/hero/hero1.png" alt="milk">
+        </div>
         <div class="hero__text">
           <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit, <br /> sed do eiusmod tempor <br /> incididunt ut labore et</p>
           <div class="hero__text-btn">
@@ -29,10 +39,36 @@
           </div>
         </div>
       </div>
-      <div class="hero__img3"><img src="/src/images/hero/hero3.png" alt="girl" width="304"></div>
+      <div class="hero__img3">
+        <source
+          media="(min-width: 768px)"
+          srcset="/src/images/hero/hero3-tab.png 1x, /src/images/hero/hero3-tab-2x.png 2x"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/src/images/hero/hero3.png 1x, /src/images/hero/hero3-2x.png 2x"
+        /> 
+        <img src="/src/images/hero/hero3.png" alt="girl">
+      </div>
     </div>
     <div class="hero__circle">
-      <div class="hero__img2"><img src="/src/images/hero/hero2.png" alt="icecream" width="236"></div>
+      <div class="hero__img2">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/src/images/hero/hero2.png 1x, /src/images/hero/hero2-2x.png 2x"
+            />
+          <source
+            media="(min-width: 768px)"
+            srcset="/src/images/hero/hero2-tab.png 1x, /src/images/hero/hero2-tab-2x.png 2x"
+            />
+          <source
+            media="(min-width: 320px)"
+            srcset="/src/images/hero/hero2-mob.png 1x, /src/images/hero/hero2-mob-2x.png 2x"
+          />
+          <img src="/src/images/hero/hero2.png" alt="icecream">
+        </picture>
+      </div>
     </div> 
   </div>
 </section>
