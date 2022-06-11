@@ -1,0 +1,573 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  all: unset;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif, "Titan One", cursive;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+a,
+label,
+button {
+  cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button {
+  border: 1px solid green;
+  height: 44px;
+  width: 159px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  background-color: #ffffff;
+}
+.button__header {
+  fill: #d41443;
+  color: #d41443;
+}
+.button__about {
+  fill: #d41443;
+  color: #d41443;
+}
+.button__customer--dark {
+  background-color: #d41342;
+  color: #ffffff;
+}
+.button__customer--light {
+  color: #d41443;
+  fill: #ffffff;
+}
+
+.section {
+  padding: 40px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 60px 0px;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
+}
+
+.header {
+  background-color: #ffbbca;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+.header .logo__img {
+  border-radius: 50%;
+  display: block;
+  background-color: #ffbbca;
+  margin-right: 20px;
+}
+.header .logo__text {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.46;
+  letter-spacing: 0.04em;
+  color: #D41443;
+}
+.header .navigation__list {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header .navigation__list {
+    display: flex;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    margin-left: 175px;
+  }
+}
+.header .navigation__item {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.header .navigation__item:not(:last-child) {
+  margin-right: 30px;
+}
+.header .button-header__top {
+  background: #ffffff;
+  border-radius: 22px;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d41443;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  fill: #D41443;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header .button-header__top:hover {
+  background-color: #ecebeb;
+}
+.header .button-header__top:focus {
+  background-color: #ecebeb;
+}
+@media screen and (min-width: 768px) {
+  .header .button-header__top {
+    display: block;
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header .button-header__top {
+    margin-left: 174px;
+  }
+}
+.header .header__btn-icon {
+  margin-left: 12px;
+  transform: translateY(5px);
+}
+.header .link:hover,
+.header .link:focus {
+  color: #d41443;
+}
+.header .link.link--current {
+  color: #d41443;
+}
+.header .menu-open-btn,
+.header .menu-close-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+@media screen and (min-width: 1280px) {
+  .header .menu-open-btn,
+.header .menu-close-btn {
+    display: none;
+  }
+}
+.header .menu-open-icon,
+.header .menu-close-btn {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #D41443;
+}
+.header .menu-open-icon:hover,
+.header .menu-close-btn:hover {
+  fill: #ecebeb;
+}
+.header .menu-open-icon {
+  transform: translateY(3px);
+}
+
+.hero {
+  position: relative;
+  min-height: 664px;
+  background-color: #FFB8CA;
+}
+.hero__circle {
+  position: absolute;
+  top: 54px;
+  right: 229px;
+  height: 534px;
+  width: 534px;
+  border-radius: 50%;
+  background-color: #FFA5BA;
+}
+.hero__raw {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 150px;
+}
+.hero__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.hero__title--red {
+  font-size: 58px;
+  line-height: 0.9;
+  color: #D41443;
+}
+.hero__link {
+  font-size: 14px;
+  line-height: 1.29;
+  min-width: 107px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  color: #D41443;
+  padding: 11px 23px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__link:hover, .hero__link:focus {
+  background-color: #D41443;
+  color: #FFFFFF;
+}
+.hero__link:not(:last-child) {
+  margin-right: 12px;
+}
+.hero__item {
+  position: relative;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: #D41443;
+}
+.hero__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.hero__item-text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #FFFFFF;
+}
+.hero__text {
+  position: absolute;
+  left: 229px;
+  bottom: 130px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #FFFFFF;
+}
+.hero__numbers-circle {
+  position: absolute;
+  bottom: 48px;
+  right: 25px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.hero__img1 {
+  position: absolute;
+  left: 16px;
+  bottom: 60px;
+}
+.hero__img2 {
+  position: absolute;
+  right: 408px;
+  bottom: 1px;
+}
+.hero__img3 {
+  position: absolute;
+  right: 16px;
+  bottom: 1px;
+}
+.hero__text-btn {
+  position: absolute;
+  left: 229px;
+  bottom: 84px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.about {
+  background: #fff5f6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about__top-text {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+
+.about__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 20px;
+}
+
+.about__list {
+  width: 220px;
+  margin-bottom: -20px;
+  margin-top: 40px;
+}
+
+.about__list_item {
+  margin-bottom: 40px;
+}
+
+.about__first-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+.about__second-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
+}
+
+.about__button {
+  background: #ffffff;
+  border-radius: 22px;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d41443;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  transition: background-color 250ms, color 800ms;
+}
+.about__button:hover {
+  background: #ecebeb;
+}
+.about__button:focus {
+  background: #ecebeb;
+}
+
+.about__btn-icon {
+  margin-left: 10px;
+  transform: translateY(5px);
+}
+
+li {
+  list-style: none;
+}
+
+.grid__img {
+  border-radius: 20%;
+}
+
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 4px;
+}
+
+.review__img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85px;
+  margin-bottom: 32px;
+}
+
+.review__text {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  padding: 43px 58px 26px 58px;
+  background-color: #fafafa;
+}
+.review__text::before {
+  position: absolute;
+  top: 19px;
+  left: 30px;
+  content: "";
+  width: 100%;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/customer-review/quotes.svg);
+}
+
+.review__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  padding-top: 36px;
+  color: #000000;
+}
+.review__name::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 16%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/customer-review/bullet-dot.png);
+}
+
+.swiper {
+  margin-top: 80px;
+  margin-bottom: 48px;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 104px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(../images/customer-review/home.svg);
+  background-size: cover;
+  border-radius: unset;
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+}
+
+.footer__text {
+  font-family: "Titan One";
+}/*# sourceMappingURL=main.css.map */
