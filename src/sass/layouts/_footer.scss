@@ -1,4 +1,93 @@
-// Я футтер
+.footer {
+    position: relative;
+    background-color: #FFF5F6;
+    padding-bottom: 20px;
+}
+
+.footer::after {
+    display: block;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 78px;
+    width: 100%;
+    height: 1px;
+    background-color: #E1E1E1;
+}
+
 .footer__text {
     font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: #FFA5BA;
+    max-width: 232px;
+    padding-left: 2px;
+}
+
+.footer__text--add {
+    display: block;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    margin-bottom: 40px;
+    margin-top: 16px;
+    padding-left: -2px;
+}
+
+.social__list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+.social__item+.social__item {
+    margin-left: 28px;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #FEA5BB;
+    width: 32px;
+    height: 32px;
+    &:hover,
+    &:focus {
+        background-color: #D41443;
+    }
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__icon {
+    fill: #FFFFFF;
+}
+
+
+.footer__contact {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    text-align: right;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.footer__phone-number {
+    color: #D41443;
+}
+.site-signature {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    color: #907E82;
+    max-width: 280px;
 }
