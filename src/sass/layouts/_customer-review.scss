@@ -1,8 +1,4 @@
 // Я отзывы клиентов
-
-.review {
-}
-
 .review__img {
   margin-left: auto;
   margin-right: auto;
@@ -11,8 +7,15 @@
 }
 
 .review__tab {
-  padding: 43px 58px 26px 58px;
+  padding: 43px 50px 26px 50px;
   background-color: #fafafa;
+
+  @include tablet {
+    padding: 37px 55px 44px 55px;
+  }
+  @include desktop {
+    padding: 32px 55px 32px 55px;
+  }
 }
 
 .review__text {
@@ -20,6 +23,7 @@
   z-index: 2;
   font-weight: 500;
   font-size: 12px;
+  padding: 0 31px;
   line-height: 2.58;
   text-align: center;
   background-image: repeating-linear-gradient(
@@ -27,20 +31,33 @@
     #e1e1e1,
     #e1e1e1 1px,
     #fafafa 0,
-    #fafafa 30.5px
+    #fafafa 31.5px
   );
 
   &::before {
     position: absolute;
     z-index: -1;
     top: -16px;
-    left: -31px;
+    left: -6px;
     content: '';
     width: 54px;
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../images/customer-review/quotes.svg);
+  }
+
+  @include tablet {
+    left: -6px;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+  @include desktop {
+    left: -2px;
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 1.87;
   }
 }
 
@@ -76,5 +93,14 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../images/customer-review/hr-dots.svg);
+  }
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  @include desktop {
+    font-size: 20px;
+    line-height: 1.85;
   }
 }
