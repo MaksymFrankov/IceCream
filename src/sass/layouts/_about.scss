@@ -1,8 +1,19 @@
+.about .container {
+  @include mobile {
+    background-image: url(/src/images/about/about-bg-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px 540px;
+  }
+  @include desktop {
+    background-image: url(/src/images/about/milk-right.png),
+      url(/src/images/about/milk-left.png);
+    background-repeat: no-repeat;
+    background-position: right 0px top 50px, left 0px top 50px;
+  }
+}
 .about {
   background: #fff5f6;
-  // background-image: url(/src/images/about/milk-left-mob.png);
-  // background-repeat: no-repeat;
-  // background-position: left;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -30,21 +41,26 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   @include tablet {
     font-size: 48px;
+    margin-bottom: 40px;
   }
   @include desktop {
+    margin-bottom: 60px;
     font-size: 58px;
+  }
+}
+.about__cards {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .about__card {
   @include tablet {
-    display: flex;
-    justify-content: space-between;
-  }
-  @include desktop {
-    justify-content: start;
+    width: calc(100% / 2 - 16px);
   }
 }
 .about__milk_pic {
@@ -52,13 +68,9 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  @include tablet {
-    margin-right: 16px;
-  }
   @include desktop {
     width: 500px;
-    margin-right: 125px;
-    margin-left: 0;
+    margin: 0;
   }
 }
 .about__list {
@@ -71,11 +83,13 @@
     width: 320px;
   }
   @include tablet {
-    width: 100%;
-    margin-left: 16px;
+    margin-top: 0px;
+    // width: 100%;
+    // margin-left: 16px;
   }
   @include desktop {
-    width: calc(100% / 2);
+    // width: calc(100% / 2);
+    margin-top: 72px;
   }
 }
 .about__list_item {
