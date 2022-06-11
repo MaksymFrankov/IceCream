@@ -1,13 +1,13 @@
 <header class="header">
   <div class="container">
-    <img
-      src="/src/images/header/logo.jpg"
-      alt="логотип"
-      width="50"
-      height="50"
-      class="logo__img"
-    />
     <div class="logo">
+      <img
+        src="/src/images/header/logo.jpg"
+        alt="логотип"
+        width="50"
+        height="50"
+        class="logo__img"
+      />
       <p class="logo__text">ICECREAM</p>
     </div>
     <nav class="navigation">
@@ -50,12 +50,16 @@
             <use href="/src/images/icons/icons.svg#icon-menu-close"></use>
           </svg>
         </button>
-        <button type="button" class="mob-menu__btn">Buy now</button>
+        <button type="button" class="mob-menu__btn">
+          Buy now<svg class="menu__btn-icon" width="9" height="18">
+            <use href="./images/icons/icons.svg#icon-button-svg-dark"></use>
+          </svg>
+        </button>
       </div>
       <div class="mob-menu-bottom">
         <ul class="mob-menu__list">
           <li class="mob-menu__item">
-            <a href="" class="link">Home</a>
+            <a href="" class="link link--current">Home</a>
           </li>
           <li class="mob-menu__item">
             <a href="" class="link">About us</a>

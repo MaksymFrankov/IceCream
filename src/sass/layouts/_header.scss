@@ -1,13 +1,28 @@
-    .header {
-  background-color: #ffbbca;
+.header {
+  position: absolute;
+
+  background-color: transparent;
+  z-index: 999;
+  width: 100%;
+
   > .container {
     display: flex;
     align-items: center;
     padding-top: 8px;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 37px;
+    }
+  }
+  .logo {
+    display: flex;
+    align-items: center;
   }
   .logo__img {
     border-radius: 50%;
-    display: block;
     background-color: #ffbbca;
     margin-right: 20px;
   }
@@ -30,7 +45,6 @@
       font-size: 16px;
       line-height: 1.31;
       align-items: center;
-      margin-left: 175px;
     }
   }
   .navigation__item {
@@ -76,9 +90,6 @@
       display: block;
       margin-left: 32px;
     }
-    @media screen and (min-width: 1280px) {
-      margin-left: 174px;
-    }
   }
 
   .header__btn-icon {
@@ -92,6 +103,59 @@
   }
   .link.link--current {
     color: #d41443;
+  }
+  .mob-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #e17992;
+    width: 250px;
+    height: 100vh;
+
+    @media screen and (min-width: 768px) {
+      width: 254px;
+    }
+  }
+  .header__btn-icon {
+    color: #d41443;
+  }
+  .mob-menu__btn {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26px;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    width: 209px;
+    height: 44px;
+    border-radius: 22px;
+    border-color: transparent;
+    background-color: #ffffff;
+    color: #d41443;
+    transition: background-color $hooverDuration $hoverTimeFunction;
+    &:hover {
+      background-color: #ecebeb;
+    }
+    &:focus {
+      background-color: #ecebeb;
+    }
+    @media screen and (min-width: 768px) {
+      width: 186px;
+    }
+  }
+
+  .mob-menu__item {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: #ffffff;
+    margin-bottom: 23px;
+    border-bottom: 1px solid #e18298;
   }
 
   .menu-open-btn,
@@ -116,5 +180,17 @@
   }
   .menu-open-icon {
     transform: translateY(+3px);
+  }
+  .menu-close-icon {
+    fill: #ffffff;
+    transform: translateY(+15px);
+    &:hover {
+      transition: fill $hooverDuration $hoverTimeFunction;
+      fill: $accentColor;
+    }
+  }
+  .menu__btn-icon {
+    margin-left: 20px;
+    transform: translateY(+5px);
   }
 }
