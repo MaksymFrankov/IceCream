@@ -34,45 +34,37 @@
 
 .footer__text {
   font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.17;
+  @include font(400, 18px, 1.17, null);
+
   text-transform: uppercase;
   color: #ffa5ba;
   width: 232px;
   @media screen and (min-width: 768px) {
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
+    @include font(400, 26px, 1.15, 0.04em);
+
     width: 340px;
   }
   @media screen and (min-width: 1280px) {
     width: 472px;
-    font-size: 30px;
-    line-height: 1.13;
+    @include font(null, 30px, 1.13, null);
   }
 }
 
 .footer__text--add {
   display: block;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
+  @include font(400, 34px, 1.15, 0.04em);
+
   text-transform: uppercase;
   color: $accentColor;
   margin-top: 16px;
   @media screen and (min-width: 768px) {
     margin-top: 12px;
-    font-size: 48px;
-    line-height: 1.15;
-    letter-spacing: 0.06em;
+    @include font(null, 48px, 1.15, 0.04em);
   }
   @media screen and (min-width: 1280px) {
     margin-top: 16px;
-    font-size: 58px;
-    line-height: 1.14;
+    @include font(null, 58px, 1.14, null);
+
     max-width: 474px;
   }
 }
@@ -112,20 +104,16 @@
 .footer__contact {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.186;
+  @include font(700, 12px, 1.186, null);
+
   text-align: right;
   color: $additionalDarkColor;
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.86;
+    @include font(null, 14px, 1.86, null);
   }
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
+    @include font(null, 16px, 1.86, 0.02em);
   }
 }
 
@@ -139,10 +127,8 @@
 .site-sign {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
-  letter-spacing: 0.02em;
+  @include font(700, 14px, 1.52, 0.02em);
+
   text-align: center;
   color: $additionalLightColor;
   margin-right: auto;
