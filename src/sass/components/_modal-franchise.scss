@@ -3,6 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  z-index: 4;
   width: 100%;
   height: auto;
   padding: 40px;
@@ -55,7 +56,7 @@
 
     &:hover .modal-franchise__icon,
     &:focus .modal-franchise__icon {
-    fill: primaryColor;
+    fill: $primaryColor;
   }
   }
   
