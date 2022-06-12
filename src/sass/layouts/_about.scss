@@ -119,40 +119,6 @@
     line-height: 1.94;
   }
 }
-.about__button {
-  background: #ffffff;
-  border-radius: 22px;
-  padding-left: 37px;
-  padding-right: 37px;
-  padding-top: 7px;
-  padding-bottom: 10px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  // display: flex;
-  color: #d41443;
-  border: none;
-  justify-content: center;
-  align-items: center;
-  display: block;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  transition: background-color 250ms, color 800ms;
-  &:hover {
-    background: #ecebeb;
-  }
-  &:focus {
-    background: #ecebeb;
-  }
-  @include tablet {
-    font-size: 16px;
-  }
-}
-.about__btn-icon {
-  margin-left: 10px;
-  transform: translateY(+5px);
-}
 #about__more {
   display: none;
 }
