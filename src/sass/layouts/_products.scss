@@ -20,11 +20,11 @@
     color: #FFA5BA;
     margin-bottom: 15px;
 
-    @media screen and (min-width: 768px) {
+@include tablet {
         font-size: 26px;
         margin-bottom: 18px;
     }
-     @media screen and (min-width: 1280px) {
+@include desktop {
              font-size: 30px;
              margin-bottom: 16px;
          }
@@ -42,18 +42,18 @@
     color: #D41443;
     margin-bottom: 8px;
 
-    @media screen and (min-width: 768px) {
+@include tablet {
             font-size: 48px;
             margin-bottom: 16px;
         }
-    @media screen and (min-width: 1280px) {
+@include desktop {
             font-size: 58px;
             margin-bottom: 0px;
         }
 }
 
 .product__list{
-    @media screen and (min-width: 768px) {
+    @include tablet {
     display: flex;
     flex-wrap:wrap;
     margin:-8px;
@@ -64,13 +64,13 @@
     position: relative;
     padding-top: 140px;
     display:flex;
-    @media screen and (min-width: 768px) {
+@include tablet {
             width: calc((100% - 96px) / 3);
             margin: 8px;
             flex-grow: 1;
             padding-top: 138px;
         }
-        @media screen and (min-width: 1280px) {
+@include desktop {
             padding-top: 261px;
         }
 }
@@ -79,10 +79,10 @@
    border-radius: 24px;
    padding: 160px 40px 40px 40px;
 
-    @media screen and (min-width: 768px) {
+@include tablet {
         padding: 118px 32px 32px 32px;
     }
-    @media screen and (min-width: 1280px) {
+@include desktop {
         padding: 165px 76px 60px 76px;
     }
 
@@ -107,7 +107,7 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/products/images1-mob-2x.png);
         }
-    @media screen and (min-width: 768px) {
+        @include tablet {
             min-width: 224px;
             min-height: 224px;
             background-image: url(../images/products/images1-tab-1x.png);
@@ -118,7 +118,7 @@
                 }
         }
 
-        @media screen and (min-width: 1280px) {
+        @include desktop {
             min-width: 394px;
             min-height: 394px;
             background-image: url(../images/products/images1-decktop-1x.png);
@@ -153,7 +153,7 @@
         (min-resolution: 2dppx) {
             background-image: url(../images/products/images2-mob-2x.png);
         }
-    @media screen and (min-width: 768px) {
+   @include tablet {
             min-width: 224px;
             min-height: 224px;
             background-image: url(../images/products/images2-tab-1x.png);
@@ -165,7 +165,7 @@
                 }
         }
 
-        @media screen and (min-width: 1280px) {
+    @include desktop {
             min-width: 394px;
             min-height: 394px;
             background-image: url(../images/products/images2-decktop-1x.png);
@@ -200,7 +200,7 @@
         (min-resolution: 2dppx) {
             background-image: url(../images/products/images3-mob-2x.png);
         }
-    @media screen and (min-width: 768px) {
+    @include tablet {
             min-width: 224px;
             min-height: 224px;
             background-image: url(../images/products/images3-tab-1x.png);
@@ -212,7 +212,7 @@
                 }
         }
 
-        @media screen and (min-width: 1280px) {
+    @include desktop {
             min-width: 394px;
             min-height: 394px;
             background-image: url(../images/products/images3-decktop-1x.png);
@@ -244,8 +244,8 @@
         display: flex;
         content: "";
         width: 26px;
-        height: 6px;
-        background-image: url("../images/icons/points.svg");
+        height: 26px;
+        background-image: url(../images/icons/points.svg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -254,6 +254,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 32px;
+        fill: $primaryColor;
                
 }
 
