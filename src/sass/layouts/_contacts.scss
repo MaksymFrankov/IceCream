@@ -4,7 +4,7 @@
     background-image: linear-gradient(
         to bottom,
         $primaryColor 24%,
-        #FFF5F6 24%
+        $bgmain 24%
     );
 
     @include tablet {
@@ -13,7 +13,7 @@
         background-image: linear-gradient(
             to bottom,
             $primaryColor 23%,
-            #FFF5F6 23%
+            $bgmain 23%
         );
     }
 
@@ -23,7 +23,7 @@
         background-image: linear-gradient(
             to bottom,
             $primaryColor 21%,
-            #FFF5F6 21%
+            $bgmain 21%
         );
     }
     
@@ -86,6 +86,8 @@
         color: $additionalDarkColor;
     
         @include mobile-horizontal {
+            @include font(500, 14px, 1.86, 0.04em);
+        }@include mobile-horizontal {
             @include font(500, 14px, 1.86, 0.04em);
         }
     
