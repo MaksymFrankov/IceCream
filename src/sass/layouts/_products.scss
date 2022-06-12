@@ -1,6 +1,8 @@
 
 .section--big-padding-top{
+    @media screen and (max-width: 767px) {
     padding-top: 80px;
+    }
 }
 
 .product {
@@ -17,6 +19,15 @@
     text-transform: uppercase;
     color: #FFA5BA;
     margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+     @media screen and (min-width: 1280px) {
+             font-size: 30px;
+             margin-bottom: 16px;
+         }
 }
 
 .product__title {
@@ -30,31 +41,59 @@
     text-transform: uppercase;
     color: #D41443;
     margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+    @media screen and (min-width: 1280px) {
+            font-size: 58px;
+            margin-bottom: 0px;
+        }
 }
+
 .product__list{
-   
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap:wrap;
+    margin:-8px;
+    justify-content: center;
+    }
 }
 .product__box{
     position: relative;
     padding-top: 140px;
+    display:flex;
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 96px) / 3);
+            margin: 8px;
+            flex-grow: 1;
+            padding-top: 138px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-top: 261px;
+        }
 }
 .product__card {
    background: #FFB8CA;
    border-radius: 24px;
    padding: 160px 40px 40px 40px;
+
+    @media screen and (min-width: 768px) {
+        padding: 118px 32px 32px 32px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 165px 76px 60px 76px;
+    }
+
 }
-
-// .product__card:not(:last-child){
-//     margin-bottom: 140px;
-// }
-
 
 .product__card--pink-bcg::before{
     display:flex;
     content:"";
     min-width: 280px;
     min-height: 280px;
-    background-image: url("/src/images/products/product1.png");
+    background-image: url(../images/products/product1.png);
     background-size: contain;
     background-position: center;
     margin-left: auto;
@@ -63,7 +102,33 @@
     top: 0px;
     transform: translate(-50%);
     left: 50%;  
-    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/images1-mob-2x.png);
+        }
+    @media screen and (min-width: 768px) {
+            min-width: 224px;
+            min-height: 224px;
+            background-image: url(../images/products/images1-tab-1x.png);
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/images1-tab-2x.png);
+                }
+        }
+
+        @media screen and (min-width: 1280px) {
+            min-width: 394px;
+            min-height: 394px;
+            background-image: url(../images/products/images1-decktop-1x.png);
+            
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/images1-decktop-2x.png);
+                }
+        }
  }
  .product__card--yellow-bcg{
     background: #F0D1A5;
@@ -74,7 +139,7 @@
     content: "";
     min-width: 280px;
     min-height: 280px;
-    background-image: url("/src/images/products/product2.png");
+    background-image: url(../images/products/product2.png);
     background-size: contain;
     background-position: center;
     margin-left: auto;
@@ -83,6 +148,34 @@
     top: 0px;
     transform: translate(-50%);
     left: 50%;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/images2-mob-2x.png);
+        }
+    @media screen and (min-width: 768px) {
+            min-width: 224px;
+            min-height: 224px;
+            background-image: url(../images/products/images2-tab-1x.png);
+            
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/images2-tab-2x.png);
+                }
+        }
+
+        @media screen and (min-width: 1280px) {
+            min-width: 394px;
+            min-height: 394px;
+            background-image: url(../images/products/images2-decktop-1x.png);
+            
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/images2-decktop-2x.png);
+                }
+        }
 
 }
 .product__card--green-bcg{
@@ -93,7 +186,7 @@
     content: "";
     min-width: 280px;
     min-height: 280px;
-    background-image: url("/src/images/products/product3.png");
+    background-image: url(../images/products/product3.png);
     background-size: contain;
     background-position: center;
     margin-left: auto;
@@ -102,6 +195,34 @@
     top: 0px;
     transform: translate(-50%);
     left: 50%;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/images3-mob-2x.png);
+        }
+    @media screen and (min-width: 768px) {
+            min-width: 224px;
+            min-height: 224px;
+            background-image: url(../images/products/images3-tab-1x.png);
+            
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/images3-tab-2x.png);
+                }
+        }
+
+        @media screen and (min-width: 1280px) {
+            min-width: 394px;
+            min-height: 394px;
+            background-image: url(../images/products/images3-decktop-1x.png);
+            
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/images3-decktop-2x.png);
+                }
+        }
 
 }
 .product__name{
@@ -116,9 +237,25 @@
         text-transform: uppercase;
     
         color: $primaryColor;
-        margin-bottom: 70px;
+        margin-bottom: 32px;
 }
 
+.product__name::after{
+        display: flex;
+        content: "";
+        width: 26px;
+        height: 6px;
+        background-image: url("../images/icons/points.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+               
+}
 
 .product__description{
         font-family: 'DM Sans';
@@ -158,11 +295,4 @@
     fill $hooverDuration $hoverTimeFunction;
 
 }
-    // background-image: 
-    //         url(../images/hero.jpg);
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    //     background-size: contain;
-    //     margin-left: auto;
-    //     margin-right: auto;
-
+   
