@@ -1,10 +1,10 @@
 // Я галерея
 .section--gallery-background {
     background-image: linear-gradient(to bottom,
-                #FFF5F6 32%,
-                #FFFFFF 32%,
-                #FFFFFF 68%);
-    @media screen and (min-width: 768px) {
+                #FFF5F6 42%,
+                #FFFFFF 42%,
+                #FFFFFF 58%);
+    @include tablet {
             background-image: linear-gradient(to bottom,
                         #FFF5F6 40%,
                         #FFFFFF 40%,
@@ -95,11 +95,11 @@
     grid-template-rows: repeat(15, 1fr);
     grid-gap: 2px;
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             grid-gap: 4px;
         }
 
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             grid-gap: 7px;
         }
 }
