@@ -26,8 +26,8 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity $hooverDuration $hoverTimeFunction,
+  transform $hooverDuration $hoverTimeFunction;
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.1);
@@ -63,7 +63,7 @@
   .modal-franchise__icon {
     fill: $accentColor;
   
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill $hooverDuration $hoverTimeFunction;
   }
   
   .modal-franchise__text {
@@ -84,24 +84,6 @@
     display: flex;
     justify-content: center;
   }
-  
-  .modal-franchise__submit-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 161px;
-    height: 44px;
-
-    @include tablet {
-      width: 174px;
-      height: 44px;
-    }
-
-    @include desktop {
-      width: 180px;
-      height: 44px;
-    }
-  }    
 }
 
 .franchise-input__form {
@@ -110,7 +92,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
   
     &:nth-of-type(4) {
       margin-bottom: 20px;
@@ -147,9 +129,9 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 24px;
   
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $hooverDuration $hoverTimeFunction, 
+    background-color $hooverDuration $hoverTimeFunction, 
+    border $hooverDuration $hoverTimeFunction;
   
     &:hover,
     &:focus {
@@ -172,9 +154,9 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 24px;
   
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $hooverDuration $hoverTimeFunction, 
+    background-color $hooverDuration $hoverTimeFunction, 
+    border $hooverDuration $hoverTimeFunction;
   
     &:hover,
     &:focus {
@@ -195,8 +177,8 @@
   
     @include font(null, 12px, 1.16, 0.01em);
   
-    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    line-height 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: font-size $hooverDuration $hoverTimeFunction, 
+    line-height $hooverDuration $hoverTimeFunction,
+    color $hooverDuration $hoverTimeFunction;
   }
 }

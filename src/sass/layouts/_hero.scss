@@ -96,19 +96,18 @@
       }
     }
 
-    &__link {
-      font-size: 8px;
-      line-height: 1.25;
-      min-width: 62px;
-      height: 24px;
-      background-color: $primaryColor;
-      border-radius: 20px;
-      align-items: center;
-      text-align: center;
-      color: $accentColor;
-      padding: 7px 14px;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .hero__box {
+      display: flex;
+    }
 
+    &__link {
+      @include font(null, 8px, 1.25, 0.01em);
+      width: 62px;
+      height: 24px;
+      border-radius: 20px;
+      background-color: $accentColor;
+      color: $primaryColor;
+      transition: background-color $hooverDuration $hoverTimeFunction;
 
       // @media screen and (min-width: 768px) {
       //   font-size: 14px;
@@ -118,18 +117,35 @@
       //   padding: 11px 23px;
       // }
 
-      @media screen and (min-width: 1280px) {
-        font-size: 14px;
-        line-height: 1.29;
-        min-width: 107px;
+      @include desktop {
+        width: 107px;
         height: 40px;
-        padding: 11px 23px;
+        @include font(null, 14px, 1.29, 0.01em);
       }
 
       &:hover,
       &:focus {
-        background-color: $accentColor;
-        color: $primaryColor;
+        background-color: #C7133E;
+      }
+
+      &--light {
+        width: 83px;
+        height: 24px;
+        background-color: $primaryColor;
+        color: $accentColor;
+
+        transition: background-color $hooverDuration $hoverTimeFunction;
+
+        @include desktop {
+          width: 138px;
+          height: 40px;
+          @include font(null, 14px, 1.29, 0.01em);
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $btnhoover;
+        }
       }
 
       &:not(:last-child) {
