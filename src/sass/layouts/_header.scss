@@ -63,7 +63,7 @@
     }
   }
 
-  .button-header__top {
+  .button-light {
     background: #ffffff;
     border-radius: 22px;
     padding-left: 37px;
@@ -93,7 +93,7 @@
     }
   }
 
-  .header__btn-icon {
+  .button__icon {
     margin-left: 12px;
     transform: translateY(+5px);
   }
@@ -115,14 +115,14 @@
     
 
     @media screen and (min-width: 768px) {
-      width: 255px;
+      width: 260px;
       
     }
   }
   .header__btn-icon {
     color: #d41443;
   }
-  .mob-menu__btn {
+  .menu__button {
     display: inline-block;
     margin-left: 20px;
     margin-right: auto;
