@@ -11,6 +11,5 @@
   function toggleMenu() {
  feature/header
     refs.menu.classList.toggle('is-mob-menu-hidden');
-
   }
 })();
