@@ -12,7 +12,6 @@
     justify-content: space-between;
     @media screen and (min-width: 768px) {
       padding-top: 32px;
-      
     }
     @media screen and (min-width: 1280px) {
       padding-top: 37px;
@@ -39,34 +38,37 @@
 
   .navigation {
     transform: translateX(26px);
-  
-  &__list {
-    display: none;
-    @media screen and (min-width: 1280px) {
-      display: flex;
+
+    &__list {
+      display: none;
+      @media screen and (min-width: 1280px) {
+        display: flex;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        align-items: center;
+      }
+    }
+    &__item {
       font-family: 'DM Sans';
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.31;
+      display: flex;
       align-items: center;
-    }
-  }
-  &__item {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    display: flex;
-    align-items: center;
-    color: $primaryColor;
+      color: $primaryColor;
 
-    &:not(:last-child) {
-      margin-right: 30px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    &__item .link {
+      transition: color 250ms $hoverTimeFunction;
     }
   }
-    }
 
   .button-light {
     background: #ffffff;
@@ -117,14 +119,19 @@
     background: #e17992;
     width: 250px;
     height: 100vh;
-    
-    
+    overflow: auto;
+    transition: all 0.5s;
+    transform-origin: 100%;
 
     @media screen and (min-width: 768px) {
       width: 260px;
-      
     }
   }
+  .is-mob-menu-hidden {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
   .header__btn-icon {
     color: #d41443;
   }
@@ -154,8 +161,6 @@
     @media screen and (min-width: 768px) {
       width: 209px;
       margin-left: 20px;
-      
-      
     }
   }
 
@@ -169,11 +174,13 @@
     margin-bottom: 23px;
     border-bottom: 1px solid #e18298;
     margin-left: 20px;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       margin-left: 20px;
     }
   }
-
+  .mob-menu__item .link {
+    transition: color 250ms $hoverTimeFunction;
+  }
   .menu-open-btn,
   .menu-close-btn {
     background-color: transparent;
@@ -186,9 +193,9 @@
     }
   }
   .menu-close-btn {
-@media screen and (min-width:768px) {
-  margin-right: 20px;
-}
+    @media screen and (min-width: 768px) {
+      margin-right: 20px;
+    }
   }
   .menu-open-icon,
   .menu-close-btn {
@@ -199,7 +206,7 @@
       fill: #ecebeb;
     }
   }
-  .menu__btn-icon{
+  .menu__btn-icon {
     fill: #d41443;
   }
   .menu-open-icon {
@@ -213,7 +220,7 @@
       transition: fill $hooverDuration $hoverTimeFunction;
       fill: $accentColor;
     }
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       margin-top: 20px;
       margin-right: 0;
     }
