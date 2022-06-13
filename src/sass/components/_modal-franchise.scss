@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  z-index: 4;
+  z-index: 1001;
   width: 100%;
   height: auto;
   padding: 40px;
@@ -44,24 +44,24 @@
     width: 30px;
     height: 30px;
   
-    background-color: $primaryColor;
+    background-color: $accentColor;
   
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
     &:hover,
     &:focus {
-    background-color: $accentColor;
+    background-color: $primaryColor;
   }
 
     &:hover .modal-franchise__icon,
     &:focus .modal-franchise__icon {
-    fill: $primaryColor;
+    fill: $accentColor; 
   }
   }
   
   .modal-franchise__icon {
-    fill: $accentColor;
+    fill: $primaryColor;
   
     transition: fill $hooverDuration $hoverTimeFunction;
   }
