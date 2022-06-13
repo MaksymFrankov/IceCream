@@ -71,7 +71,8 @@
 
     color: $accentColor;
 
-    @include font(700, 20px, 1.5, 0.03em);
+    font-family: Titan One;
+    @include font(700, 19px, 1.5, 0.03em);
     text-transform: uppercase;
     text-align: center;
 
