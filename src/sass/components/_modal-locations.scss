@@ -3,10 +3,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  z-index: 4;
+  z-index: 1001;
   width: 100%;
   height: auto;
   padding: 40px;
+
+  background-image: linear-gradient(
+    to bottom,
+    $primaryColor 56%,
+    #F0D1A5 56%
+  );
+
+  @include mobile {
+    background-image: linear-gradient(
+    to bottom,
+    $primaryColor 53%,
+    #F0D1A5 53%
+    );
+  }
 
   @include mobile-horizontal {
     width: 450px;
@@ -16,6 +30,12 @@
   @include desktop {
     width: 528px;
     height: auto;
+
+    background-image: linear-gradient(
+    to bottom,
+    $primaryColor 51%,
+    #F0D1A5 51%
+    );
   }
 
   opacity: 1;
@@ -44,24 +64,24 @@
     width: 30px;
     height: 30px;
   
-    background-color: $primaryColor;
+    background-color: $accentColor;;
   
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
     &:hover,
     &:focus {
-    background-color: $accentColor;
+    background-color: $primaryColor
   }
 
     &:hover .modal-locations__icon,
     &:focus .modal-locations__icon {
-    fill: $primaryColor;
+    fill: $accentColor;
   }
   }
   
   .modal-locations__icon {
-    fill: $accentColor;
+    fill: $primaryColor;
   
     transition: fill $hooverDuration $hoverTimeFunction;
   }
