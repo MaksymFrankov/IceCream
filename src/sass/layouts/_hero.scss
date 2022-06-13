@@ -96,8 +96,20 @@
       }
     }
 
-    .hero__box {
+    .hero-link__list {
       display: flex;
+    }
+
+    .hero-link__item {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      @include desktop {
+        &:not(:last-child) {
+          margin-right:12px;
+        }
+      }
     }
 
     &__link {
@@ -146,15 +158,6 @@
         &:focus {
           background-color: $btnhoover;
         }
-      }
-
-      &:not(:last-child) {
-        margin-right: 9px;
-
-        @media screen and (min-width: 1280px) {
-          margin-right: 12px;
-      }
-
       }
     }
 

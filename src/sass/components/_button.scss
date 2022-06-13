@@ -34,15 +34,9 @@
     }
 }
 
-
-
 .contacts__button {
     width: 161px;
     height: 44px;
-    
-    &:not(:last-child) {
-        margin-bottom: 10px;
-    }
     
     @include tablet {
         width: 191px;
@@ -52,11 +46,6 @@
             width: 174px;
             height: 44px;
         }
-    
-        &:not(:last-child) {
-            margin-right: 14.5px;
-            margin-bottom: 0;
-        }
     }
     @include desktop {
         width: 198px;
@@ -65,10 +54,6 @@
         &--inverse {
             width: 180px;
             height: 44px;
-        }
-    
-        &:not(:last-child) {
-            margin-right: 15px;
         }
     }
 
