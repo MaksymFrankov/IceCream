@@ -164,89 +164,89 @@
   }
 // Стили кнопок от Аллы
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 22px;
-  background-color: $primaryColor;
-  border: 1px solid transparent;
-  height: 44px;
-  font-family: 'DM Sans';
+// .button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 22px;
+//   background-color: $primaryColor;
+//   border: 1px solid transparent;
+//   height: 44px;
+//   font-family: 'DM Sans';
 
-  @include font(700, 16px, 1.31, null);
+//   @include font(700, 16px, 1.31, null);
 
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-  }
+//   &:hover,
+//   &:focus {
+//     background-color: #ecebeb;
+//   }
 
-  &__header {
-    display: none;
+//   &__header {
+//     display: none;
 
-    @include tablet {
-      display: block;
-      fill: $accentColor;
-      color: $accentColor;
-      width: 160px;
-      padding-right: 36px;
-      padding-left: 37px;
-    }
-  }
-  &__menu {
-    fill: $accentColor;
-    color: $accentColor;
-    width: 209px;
-    padding-right: 47px;
-    padding-left: 62px;
-    @include tablet {
-      weight: 186px;
-      padding-right: 43px;
-      padding-left: 43px;
-    }
-    @include desktop {
-      display: none;
-    }
-  }
+//     @include tablet {
+//       display: block;
+//       fill: $accentColor;
+//       color: $accentColor;
+//       width: 160px;
+//       padding-right: 36px;
+//       padding-left: 37px;
+//     }
+//   }
+//   &__menu {
+//     fill: $accentColor;
+//     color: $accentColor;
+//     width: 209px;
+//     padding-right: 47px;
+//     padding-left: 62px;
+//     @include tablet {
+//       weight: 186px;
+//       padding-right: 43px;
+//       padding-left: 43px;
+//     }
+//     @include desktop {
+//       display: none;
+//     }
+//   }
 
-  &__about {
-    fill: $accentColor;
-    color: $accentColor;
-    max-width: 176px;
-    padding-right: 37px;
-    padding-left: 37px;
-  }
-}
+//   &__about {
+//     fill: $accentColor;
+//     color: $accentColor;
+//     max-width: 176px;
+//     padding-right: 37px;
+//     padding-left: 37px;
+//   }
+// }
 
-.contacts__button {
-  background-color: $primaryColor;
-  color: $accentColor;
-  fill: $accentColor;
-  width: 161px;
-  padding-right: 32px;
-  padding-left: 32px;
+// .contacts__button {
+//   background-color: $primaryColor;
+//   color: $accentColor;
+//   fill: $accentColor;
+//   width: 161px;
+//   padding-right: 32px;
+//   padding-left: 32px;
 
-  &--inverse {
-    background-color: #d41342;
-    color: $primaryColor;
-    width: 161px;
-    padding-right: 17px;
-    padding-left: 17px;
-    &:hover,
-    &:focus {
-      background-color: #c7133e;
-      color: #ecebeb;
-    }
-  }
-}
+//   &--inverse {
+//     background-color: #d41342;
+//     color: $primaryColor;
+//     width: 161px;
+//     padding-right: 17px;
+//     padding-left: 17px;
+//     &:hover,
+//     &:focus {
+//       background-color: #c7133e;
+//       color: #ecebeb;
+//     }
+//   }
+// }
 
-// марджиньі до стрелочки
-.suffix {
-  margin-left: 8px;
-}
-.suffix__header {
-  margin-left: 12px;
-}
-.suffix__menu {
-  margin-left: 28px;
-}
+// // марджиньі до стрелочки
+// .suffix {
+//   margin-left: 8px;
+// }
+// .suffix__header {
+//   margin-left: 12px;
+// }
+// .suffix__menu {
+//   margin-left: 28px;
+// }
