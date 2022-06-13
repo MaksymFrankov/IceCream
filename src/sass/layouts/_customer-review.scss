@@ -9,6 +9,7 @@
 .review__tab {
   padding: 43px 50px 26px 50px;
   background-color: #fafafa;
+  margin-bottom: 16px;
 
   @include tablet {
     padding: 37px 55px 44px 55px;
@@ -70,8 +71,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.85;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  margin-top: 36px;
   color: $additionalDarkColor;
 
   &::before {
@@ -79,7 +79,7 @@
     content: '';
     width: 32px;
     height: 16%;
-    top: 16px;
+    top: -16px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../images/customer-review/bullet-dot.png);
@@ -89,7 +89,7 @@
     content: '';
     width: 73px;
     height: 20px;
-    bottom: 4px;
+    bottom: -29px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../images/customer-review/hr-dots.svg);
