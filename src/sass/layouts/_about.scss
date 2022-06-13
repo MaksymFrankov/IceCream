@@ -1,21 +1,25 @@
-.about .container {
-  @include mobile {
-    background-image: url(/src/images/about/about-bg-mob.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0px 540px;
+.about {
+  background: #fff5f6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(/src/images/about/about-bg-mob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 590px;
+
+  @include tablet {
+    background-image: none;
+    padding-top: 20px;
   }
   @include desktop {
     background-image: url(/src/images/about/milk-right.png),
       url(/src/images/about/milk-left.png);
     background-repeat: no-repeat;
-    background-position: right 0px top 50px, left 0px top 50px;
+    background-position: right 0px top 200px, left 0px top 200px;
+    background-size: auto 520px;
+    padding-top: 60px;
+    padding-bottom: 0px;
   }
-}
-.about {
-  background: #fff5f6;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 .about__top-text {
   font-family: 'Titan One';
@@ -75,25 +79,23 @@
 }
 .about__list {
   width: 220px;
-  margin-bottom: -20px;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   @include mobile-horizontal {
-    width: 320px;
+    width: 100%;
   }
   @include tablet {
     margin-top: 0px;
-    // width: 100%;
-    // margin-left: 16px;
   }
   @include desktop {
-    // width: calc(100% / 2);
-    margin-top: 72px;
+    margin-top: 90px;
   }
 }
 .about__list_item {
-  margin-bottom: 40px;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
   @include desktop {
     width: 463px;
   }
@@ -107,6 +109,11 @@
     font-size: 14px;
     line-height: 1.94;
   }
+  @include desktop {
+    width: 463px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
 .about__second-text {
   font-style: normal;
@@ -117,6 +124,19 @@
   @include tablet {
     font-size: 14px;
     line-height: 1.94;
+  }
+  @include desktop {
+    width: 463px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+.about__button {
+  font-size: 14px;
+  margin-top: 20px;
+  @include tablet {
+    margin-top: 40px;
+    font-size: 16px;
   }
 }
 #about__more {
