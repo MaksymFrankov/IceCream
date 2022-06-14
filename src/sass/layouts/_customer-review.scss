@@ -72,6 +72,8 @@
   font-size: 14px;
   line-height: 1.85;
   margin-top: 36px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
   color: $additionalDarkColor;
 
   &::before {
@@ -84,23 +86,50 @@
     background-repeat: no-repeat;
     background-image: url(../images/customer-review/bullet-dot.png);
   }
-  &::after {
-    position: absolute;
-    content: '';
-    width: 73px;
-    height: 20px;
-    bottom: -29px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(../images/customer-review/hr-dots.svg);
-  }
 
   @include tablet {
     font-size: 16px;
     line-height: 1.87;
+    margin-bottom: 0;
   }
   @include desktop {
     font-size: 20px;
     line-height: 1.85;
+    margin-bottom: 0;
   }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 43px;
+
+  @include mobile-horizontal {
+    bottom: 53px;
+  }
+
+  @include tablet {
+    bottom: 10px;
+  }
+
+  @include desktop {
+    bottom: 7px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+}
+
+.swiper-pagination-bullet-active {
+  margin-bottom: -4px;
+  background-image: url(../images/customer-review/home.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: unset;
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
 }
