@@ -52,6 +52,10 @@
     width: 472px;
     @include font(null, 30px, 1.13, null);
   }
+  // &:hover,
+  // &:focus {
+  //   transform: scale(1.05);
+  // }
 }
 
 .footer__text--add {
@@ -123,9 +127,12 @@
 
 .footer__phone-number {
   color: $accentColor;
+  transition: transform $hooverDuration $hoverTimeFunction,
+    background $hooverDuration $hoverTimeFunction;
   &:hover,
   &:focus {
     color: $iconColor;
+    transform: scale(1.2);
   }
 }
 .site-sign {
