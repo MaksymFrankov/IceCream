@@ -116,6 +116,8 @@
     position: fixed;
     top: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
     background: #e17992;
     width: 250px;
     height: 100vh;
@@ -123,8 +125,14 @@
     transition: all 0.5s;
     transform-origin: 100%;
 
-    @media screen and (min-width: 768px) {
-      width: 260px;
+    @include mobile-horizontal {
+      width: 50vw;
+    }
+    @include tablet {
+      width: 40vw;
+    }
+    @include desktop {
+      display: none;
     }
   }
   .is-mob-menu-hidden {
